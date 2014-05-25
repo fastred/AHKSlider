@@ -8,6 +8,11 @@
 
 #import "AHKViewController.h"
 
+static NSString *formatValue(float value)
+{
+    return [NSString stringWithFormat:@"%.6f", value];
+}
+
 @interface AHKViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *systemSliderLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ahkSliderLabel;
@@ -19,12 +24,12 @@
 
 - (IBAction)systemSliderChangedValue:(UISlider *)sender
 {
-    self.systemSliderLabel.text = [@(sender.value) stringValue];
+    self.systemSliderLabel.text = formatValue(sender.value);
 }
 
 - (IBAction)ahkSliderChangedValue:(UISlider *)sender
 {
-    self.ahkSliderLabel.text = [@(sender.value) stringValue];
+    self.ahkSliderLabel.text = formatValue(sender.value);
 }
 
 @end
