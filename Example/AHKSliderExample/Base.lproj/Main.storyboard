@@ -17,39 +17,39 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UISlider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uil-oN-Dcb">
-                                <rect key="frame" x="20" y="20" width="230" height="21"/>
+                                <rect key="frame" x="20" y="40" width="230" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNY-jt-2NK">
-                                <rect key="frame" x="258" y="20" width="42" height="21"/>
+                                <rect key="frame" x="258" y="40" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HoR-cp-cLT">
-                                <rect key="frame" x="18" y="49" width="284" height="31"/>
+                                <rect key="frame" x="18" y="81" width="284" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="systemSliderChangedValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="IWO-9C-IXa"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AHKSlider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq0-l7-vdY">
-                                <rect key="frame" x="20" y="117" width="79" height="21"/>
+                                <rect key="frame" x="20" y="149" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWG-Oy-y27">
-                                <rect key="frame" x="258" y="117" width="42" height="21"/>
+                                <rect key="frame" x="258" y="149" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tb6-vj-2qS" customClass="AHKSlider">
-                                <rect key="frame" x="18" y="146" width="284" height="31"/>
+                                <rect key="frame" x="18" y="190" width="284" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="ahkSliderChangedValue:" destination="vXZ-lx-hvc" eventType="valueChanged" id="mvf-kq-xjk"/>
@@ -58,11 +58,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HoR-cp-cLT" firstAttribute="top" secondItem="Uil-oN-Dcb" secondAttribute="bottom" constant="8" id="2rw-K7-uWv"/>
+                            <constraint firstItem="HoR-cp-cLT" firstAttribute="top" secondItem="Uil-oN-Dcb" secondAttribute="bottom" constant="20" id="2rw-K7-uWv"/>
                             <constraint firstAttribute="trailing" secondItem="zNY-jt-2NK" secondAttribute="trailing" constant="20" id="7UR-EZ-a9L"/>
                             <constraint firstItem="tb6-vj-2qS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Ky8-cQ-uHq"/>
                             <constraint firstAttribute="trailing" secondItem="HoR-cp-cLT" secondAttribute="trailing" constant="20" id="LUz-Ix-kAn"/>
-                            <constraint firstItem="Uil-oN-Dcb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="QqX-Qu-2VP"/>
+                            <constraint firstItem="Uil-oN-Dcb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="QqX-Qu-2VP"/>
                             <constraint firstItem="Uil-oN-Dcb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="RGM-2N-dO1"/>
                             <constraint firstAttribute="trailing" secondItem="lWG-Oy-y27" secondAttribute="trailing" constant="20" id="VNO-6b-ERJ"/>
                             <constraint firstItem="Fq0-l7-vdY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Vqo-YP-JGL"/>
@@ -72,10 +72,11 @@
                             <constraint firstItem="lWG-Oy-y27" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fq0-l7-vdY" secondAttribute="trailing" constant="8" symbolic="YES" id="iUE-Bw-RRS"/>
                             <constraint firstItem="lWG-Oy-y27" firstAttribute="baseline" secondItem="Fq0-l7-vdY" secondAttribute="baseline" id="nrH-Jt-Xcm"/>
                             <constraint firstItem="HoR-cp-cLT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ruf-vL-AS4"/>
-                            <constraint firstItem="tb6-vj-2qS" firstAttribute="top" secondItem="Fq0-l7-vdY" secondAttribute="bottom" constant="8" id="si8-q6-qJ5"/>
+                            <constraint firstItem="tb6-vj-2qS" firstAttribute="top" secondItem="Fq0-l7-vdY" secondAttribute="bottom" constant="20" id="si8-q6-qJ5"/>
                             <constraint firstItem="Fq0-l7-vdY" firstAttribute="top" secondItem="HoR-cp-cLT" secondAttribute="bottom" constant="38" id="wsX-IS-wQl"/>
                         </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="ahkSliderLabel" destination="lWG-Oy-y27" id="uex-Gq-n8q"/>
                         <outlet property="systemSliderLabel" destination="zNY-jt-2NK" id="egA-za-c9N"/>
