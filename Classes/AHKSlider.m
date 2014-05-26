@@ -98,16 +98,23 @@
  */
 - (void)correctValueIfNeeded
 {
-    static const CGFloat maxRelativeValueChange = 0.05f;
+    static const CGFloat kAcceptableLocationDelta = 12.0f;
     __block float properSliderValue = FLT_MIN;
 
     // finds the newest entry with a duration longer than 0.05s
     [self.entries enumerateObjectsUsingBlock:^(AHKSliderEntry *entry, NSUInteger idx, BOOL *stop) {
         if (entry.duration > 0.05) {
-            // use this value as a one user tried to select if it's close enough to the value after the touch has ended
-            if (fabsf(entry.value - self.value) < maxRelativeValueChange * fabsf(self.maximumValue - self.minimumValue)) {
+
+            CGFloat width = CGRectGetWidth(self.frame);
+            CGFloat valueDelta = fabsf(entry.value - self.value);
+            CGFloat sliderRange = fabsf(self.maximumValue - self.minimumValue);
+            CGFloat locationDelta = valueDelta / sliderRange * width;
+
+            // assume this value as the one user tried to select if it's close enough to the value after the touch has ended
+            if (locationDelta < kAcceptableLocationDelta) {
                 properSliderValue = entry.value;
             }
+
             *stop = YES;
         }
     }];
