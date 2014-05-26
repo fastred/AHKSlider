@@ -22,3 +22,4 @@ DerivedData
 Example/Pods
 Example/Podfile.lock
 Example/AHKSliderExample.xcworkspace/contents.xcworkspacedata
+Rakefile
