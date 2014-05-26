@@ -19,3 +19,6 @@ DerivedData
 *.hmap
 *.ipa
 
+Example/Pods
+Example/Podfile.lock
+Example/AHKSliderExample.xcworkspace/contents.xcworkspacedata
