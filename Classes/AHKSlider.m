@@ -29,7 +29,7 @@
 
 
 @interface AHKSlider ()
-/// Keeps AHKSliderEntry objects from the current touch. Objects are kept in the descending order.
+/// Keeps AHKSliderEntry objects from the current touch.
 @property (strong, nonatomic) NSMutableArray *entries;
 @end
 
@@ -90,7 +90,7 @@
     AHKSliderEntry *newEntry = [[AHKSliderEntry alloc] init];
     newEntry.value = self.value;
     newEntry.startingTime = CACurrentMediaTime();
-    [self.entries insertObject:newEntry atIndex:0];
+    [self.entries addObject:newEntry];
 }
 
 /**
@@ -102,7 +102,7 @@
     __block float properSliderValue = FLT_MIN;
 
     // finds the newest entry with a duration longer than 0.05s
-    [self.entries enumerateObjectsUsingBlock:^(AHKSliderEntry *entry, NSUInteger idx, BOOL *stop) {
+    [self.entries enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(AHKSliderEntry *entry, NSUInteger idx, BOOL *stop) {
         if (entry.duration > 0.05) {
 
             CGFloat width = CGRectGetWidth(self.frame);
@@ -129,7 +129,7 @@
 /// update the duration of the latest entry in the entries array
 - (void)updateLastEntryDuration
 {
-    AHKSliderEntry *lastEntry = [self.entries firstObject];
+    AHKSliderEntry *lastEntry = [self.entries lastObject];
     lastEntry.duration = CACurrentMediaTime() - lastEntry.startingTime;
 }
 
