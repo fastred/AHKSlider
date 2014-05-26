@@ -8,12 +8,15 @@
 
 #import "AHKSlider.h"
 
+/**
+ *  Used for keeping track of how long a given value was present on the slider during a touch.
+ */
 @interface AHKSliderEntry : NSObject
-// slider's value
+/// slider's value
 @property (nonatomic) float value;
-// time at which this position was reached ("slided to")
+/// time at which this position was reached ("slided to")
 @property (nonatomic) NSTimeInterval startingTime;
-// how long the user has kept the slider in this position
+/// how long the user has kept the slider in this position
 @property (nonatomic) NSTimeInterval duration;
 @end
 
@@ -56,6 +59,7 @@
     BOOL retVal = [super continueTrackingWithTouch:touch withEvent:event];
 
     if (retVal) {
+        [self updateLastEntryDuration];
         [self addNewEntry];
     }
 
@@ -85,8 +89,6 @@
 
 - (void)addNewEntry
 {
-    [self updateLastEntryDuration];
-
     AHKSliderEntry *newEntry = [[AHKSliderEntry alloc] init];
     newEntry.value = self.value;
     newEntry.startingTime = CACurrentMediaTime();

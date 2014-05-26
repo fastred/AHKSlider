@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  A class that improves the precision of selecting values in sliders.
+ */
 @interface AHKSlider : UISlider
-
 @end
