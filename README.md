@@ -1,10 +1,14 @@
 # AHKSlider
 
-[![Version](https://img.shields.io/cocoapods/v/AHKSlider.svg?style=flat)](http://cocoadocs.org/docsets/AHKSlider)
-[![License](https://img.shields.io/cocoapods/l/AHKSlider.svg?style=flat)](http://cocoadocs.org/docsets/AHKSlider)
-[![Platform](https://img.shields.io/cocoapods/p/AHKSlider.svg?style=flat)](http://cocoadocs.org/docsets/AHKSlider)
+[![Twitter: @arekholko](https://img.shields.io/badge/contact-@arekholko-red.svg?style=flat)](https://twitter.com/arekholko)
+[![License: MIT](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/fastred/AHKSlider/blob/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AHKSlider.svg?style=flat)](https://github.com/fastred/AHKSlider)
 
-## Usage
+`AHKSlider` is a `UISlider` subclass that improves the precision of selecting values. The idea behind it is described in a blog post: [Improving UISlider's Precision](http://holko.pl/ios/2014/05/26/improving-uisliders-precision/).
+
+![Demo GIF](https://raw.githubusercontent.com/fastred/AHKSlider/master/demo.gif)
+
+## Demo
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first. Alternatively, run `pod try AHKSlider` from the command line.
 
@@ -20,9 +24,7 @@ it, simply add the following line to your Podfile:
 
     pod "AHKSlider"
 
-## Author
-
-Arkadiusz Holko, fastred@fastred.org
+and then use `AHKSlider` instead of `UISlider`.
 
 ## License
 
