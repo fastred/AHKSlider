@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "AHKSlider"
   s.version          = "0.1.0"
-  s.summary          = "UISlider subclass that improves value precision of the value selection."
+  s.summary          = "UISlider subclass that improves the precision of selecting values."
   s.homepage         = "https://github.com/fastred/AHKSlider"
   s.license          = 'MIT'
   s.author           = { "Arkadiusz Holko" => "fastred@fastred.org" }
