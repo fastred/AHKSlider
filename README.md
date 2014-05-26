@@ -6,9 +6,12 @@
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Example directory first.
+To run the example project; clone the repo, and run `pod install` from the Example directory first. Alternatively, run `pod try AHKSlider` from the command line.
 
 ## Requirements
+
+ * iOS 6 and above
+ * ARC
 
 ## Installation
 
