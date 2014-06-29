@@ -1,6 +1,5 @@
 # AHKSlider
 
-[![Twitter: @arekholko](https://img.shields.io/badge/contact-@arekholko-red.svg?style=flat)](https://twitter.com/arekholko)
 [![License: MIT](https://img.shields.io/badge/license-MIT-red.svg?style=flat)](https://github.com/fastred/AHKSlider/blob/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AHKSlider.svg?style=flat)](https://github.com/fastred/AHKSlider)
 
@@ -25,3 +24,10 @@ it, simply add the following line to your Podfile:
     pod "AHKSlider"
 
 and then use `AHKSlider` instead of `UISlider`.
+
+## Author
+
+Arkadiusz Holko:
+
+* [Blog](http://holko.pl/)
+* [@arekholko on Twitter](https://twitter.com/arekholko)
