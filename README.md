@@ -25,8 +25,3 @@ it, simply add the following line to your Podfile:
     pod "AHKSlider"
 
 and then use `AHKSlider` instead of `UISlider`.
-
-## License
-
-AHKSlider is available under the MIT license. See the LICENSE file for more info.
-
